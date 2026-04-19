@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6fb;
+}
+
+.container {
+    max-width: 980px;
+    margin: 24px auto;
+    padding: 16px;
+}
+
+.auth-card, .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+label { display: block; margin-top: 12px; }
+input { width: 100%; padding: 10px; margin-top: 4px; box-sizing: border-box; }
+button, .button-link {
+    margin-top: 14px;
+    padding: 10px 14px;
+    background: #1f5eff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav {
+    display: flex;
+    gap: 16px;
+    padding: 12px 20px;
+    background: #111827;
+    align-items: center;
+}
+
+.nav a, .btn-link {
+    color: #fff;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.cards > div, #reportSummary {
+    background: #fff;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+    text-align: left;
+}
+
+.low-stock { color: #b91c1c; font-weight: bold; }
+.muted { color: #6b7280; }
+.toolbar { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
