@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Products</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+</head>
+<body>
+<nav class="nav">
+    <a href="/dashboard.html">Dashboard</a>
+    <a href="/products.html">Products</a>
+    <button id="logoutBtn" class="btn-link">Logout</button>
+</nav>
+<div class="container">
+    <div class="toolbar">
+        <h2>Products</h2>
+        <div>
+            <input id="categoryFilter" placeholder="Filter by category">
+            <button onclick="loadProducts()">Filter</button>
+            <a class="button-link" href="/product-form.html">Add Product</a>
+        </div>
+    </div>
+    <table>
+        <thead>
+        <tr><th>ID</th><th>Name</th><th>Category</th><th>Quantity</th><th>Price</th><th>Status</th><th>Actions</th></tr>
+        </thead>
+        <tbody id="productBody"></tbody>
+    </table>
+    <h3>Inventory Report Summary</h3>
+    <div id="reportSummary"></div>
+</div>
+<script src="/js/common.js"></script>
+<script src="/js/products.js"></script>
+</body>
+</html>
